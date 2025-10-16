@@ -31,7 +31,6 @@ jobs:
 
       - name: Build project
         run: npm run build
-        working-directory: ./DataFlow
 
       - name: Upload production-ready build files
         uses: actions/upload-pages-artifact@v3
@@ -53,4 +52,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 
